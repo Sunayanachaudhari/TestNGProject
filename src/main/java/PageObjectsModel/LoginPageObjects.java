@@ -10,8 +10,9 @@ public class LoginPageObjects {
 	private By username=By.xpath("//input[@id='username']");
 	private By password=By.xpath("//input[@id='password']");
 	private By login=By.xpath("//input[@id='Login']");
-	private By tryforfree=By.xpath("//a[@id='signup_link']");
-
+	private By tryforfree=By.xpath("//a[@id='signup_link']");	
+	public By errorMessage=By.xpath("//div[@id='error']]");
+	
 	public LoginPageObjects(WebDriver driver2) {
       this.driver=driver2;
 	}
@@ -29,13 +30,15 @@ public class LoginPageObjects {
      }
 	 public WebElement clickOntryforfree() {
 	 return driver.findElement(tryforfree);
-	
+	 }
 
-
+	  public WebElement errormessage() {
+	  return driver.findElement(errorMessage);
+		     }
 	 
 	 
 	 
-	 }	
+	 	
 	
 }
 

@@ -8,7 +8,7 @@ import Resources.BaseClass;
 
 public class SignUpPageObject extends BaseClass {
 	public WebDriver driver;
-	By firstname=By.xpath("//input[@name='UserFirstName']");
+   	By firstname=By.xpath("//input[@name='UserFirstName']");
 	By LastName=By.xpath("//input[@name='UserLastName']");
 	By jobtitle=By.xpath("//input[@name='UserTitle']");
 	By email=By.xpath("//input[@name='UserEmail']");
@@ -43,7 +43,7 @@ public class SignUpPageObject extends BaseClass {
      public WebElement selectcompanyemployees()  { 
      return driver.findElement(companyemployees);
      }
-     public WebElement selectcompanycountry()  { 
+     public WebElement selectcountryname()  { 
      return driver.findElement(countryname);
          }
 
